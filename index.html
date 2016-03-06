@@ -7,10 +7,47 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <style type="text/css">
+    b{
+      font-weight: bold;
+    }
+    header{
+      padding-left: 130px;
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+    header:before{
+      content: '';
+      width: 128px;
+      height: 128px;
+      width: 128px;
+      height: 128px;
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      background: url(images/icon-128.png);
+    }
+    #by_dm{
+    position: relative;
+    bottom: 30px;
+    margin-left: 5px;
+    padding: 3px 6px 3px 6px;
+    background: #396498;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 2px;
+    letter-spacing: initial;
+    font-family: sans-serif;
+    white-space: nowrap;
+    }
+    </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Drivenotepad.GitHub.io by drivenotepad</title>
+    <title>Drive Notepad</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   </head>
 
   <body>
@@ -18,24 +55,30 @@
       <div class="inner">
 
         <header>
-          <h1>Drive Notepad</h1>
+          <h1>Drive Notepad<span id="by_dm">by DM</span></h1>
+          View and edit your Google Drive™ files in your browser.
         </header>
 
         <hr>
 
         <section id="main_content">
-          <h3>
 
-<a id="drive-notepad" class="anchor" href="#drive-notepad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drive Notepad</h3>
+<p>The app is hosted <a href="https://help.github.com/categories/github-pages-basics/">free on github</a>, and Google Drive API requests are also <a href="http://stackoverflow.com/a/10313416/2399799">fulfilled for free</a>.  This means it costs nothing to keep the app up and running, and hence it can be provided to users for free. Yay!</p>
 
-<p>Drive Notepad is not affiliated with Google. It is made by DM in his spare time.   </p>
+<p>The editor itself is an instance of the <a href="http://github.com/ajaxorg/ace/">ace.js poject</a> (including the css). The file history viewer uses <a href="http://snowtide.com/jsdifflib">jsdifflib</a> for diffing (the diff-chaining and UI are custom built). The menu icons are from <a href="http://modernuiicons.com/">modernuiicons.com</a>. the shake animation is from <a href="http://daneden.me/animate/">daneden.me</a>, all other CSS is custom "designed".  JavaScript keybinding use <a href="https://github.com/madrobby/keymaster">keymaster.js</a>.</p>
 
-<p>The app is hosted <a href="https://help.github.com/categories/github-pages-basics/">free on github</a>, and Google API requests are also <a href="http://stackoverflow.com/a/10313416/2399799">fulfilled for free</a>.  This means it costs nothing to keep the app up and running, and hence it can be provided to users for free. Yay!</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/JhV-8L7Kkvk" frameborder="0" allowfullscreen="true"></iframe>
 
 <h3>
 <a id="news" class="anchor" href="#news" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>News</h3>
 
-<p>Mar 2016. The app is undergoing its biennial refresh, but the current development version is available live <a href="/app">here</a>.</p>
+<p><b>Mar 2016.</b> Drive Notepad is moving from <code>appspot.com</code> to <code>github.io</code>.  It is also undergoing a major refresh.  The new (development) version is available live <a href="/app">here</a>.  You can use this development version simply by clicking that link and then loading a file from within the application, alternatively, open a file in the old application and copy the <code>?state=....</code> stuff from the old url to the new url.  If you try it out, please provide feedback in the <a href="https://plus.google.com/communities/107691649945880497995">Google+ community</a>.  Note that during development anything could happen, so be careful!</p>
+
+<p><b>Aug 2015. !!!! IMPORTANT !!!!</b> After August 2016 you will no longer be able to use Google Drive as a simple web-server for HTML/JS/CSS/images etc (see this <a href="http://googleappsdeveloper.blogspot.co.uk/2015/08/deprecating-web-hosting-support-in.html">Google blog post</a>).
+
+Your files will not disappear from your Google Drive - you will still be able to access them via the usual web interface and/or desktop sync program, and you will still be able to open them with Drive Notepad (or other similar 3rd party apps), however you will no longer be able to use Google Drive + Drive Notepad as a means of quickly building publicly visible websites. In terms of replacements, there may not be anything quite as easy/free/simple out there, but there are a large number of alternatives with varying strengths. 
+One option is to create a repository with a <code>gh-pages</code> branch on github and then access it at <code>your_username.github.io/your_repository_name</code>. This is how drivenotepad itself is now being served (although it is a github "organisation" rather than a user). If you know of a better alternative please comment on the <a href="https://plus.google.com/108192375095500160194/posts/ZkW3GwcHyoA">Google+ version of this announcement</a> for others to see.</p>
+
         </section>
 
         <footer>
@@ -45,6 +88,7 @@
           <a href="d1manson.wordpress.com">developer's blog</a> |
           DM, Mar 2016.
           <br><br>
+          Drive Notepad is not affiliated with Google, it is made by DM.<br>
           Google Drive is a trademark of Google Inc. Use of this trademark is subject to Google Permissions.<br>
           This page uses the tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a><br>
         </footer>
